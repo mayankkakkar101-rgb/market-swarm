@@ -1,0 +1,43 @@
+name: Build Unity WebGL
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-unity-webgl:
+    name: Build Unity WebGL artifact
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Cache Unity Library
+        uses: actions/cache@v4
+        with:
+          path: unity-webgl/Library
+          key: Library-${{ hashFiles('unity-webgl/Assets/**', 'unity-webgl/Packages/**', 'unity-webgl/ProjectSettings/**') }}
+          restore-keys: |
+            Library-
+
+      - name: Build Unity WebGL
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: unity-webgl
+          targetPlatform: WebGL
+          buildsPath: unity-build
+
+      - name: Upload Unity WebGL build
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-swarm-unity-webgl
+          path: unity-build/WebGL
