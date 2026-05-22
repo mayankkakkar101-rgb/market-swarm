@@ -9,7 +9,7 @@ namespace MarketSwarm
 
     public enum CharacterId
     {
-        PM,
+        Mitrooo,
         Pappu
     }
 }

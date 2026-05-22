@@ -59,7 +59,7 @@ Assign:
 - `HUD`
 - `Character Select UI`
 - `Game Over Panel`
-- `PM Character`
+- `Mitrooo Character`
 - `Pappu Character`
 
 ### Arena
@@ -126,10 +126,10 @@ Create two ScriptableObjects:
 Assets/Create/Market Swarm/Character Definition
 ```
 
-PM:
+Mitrooo:
 
-- ID: `PM`
-- Display Name: `PM`
+- ID: `Mitrooo`
+- Display Name: `Mitrooo`
 - Weapon Name: `Lotus`
 - Attack Radius: around `1.6`
 - Attack Cooldown: `0.5`

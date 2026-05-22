@@ -16,7 +16,10 @@ function HeroCard({ preset, onSelect, bg }) {
     <button
       type="button"
       className={`hero-card hero-card--${preset.id}`}
-      onClick={() => onSelect(preset.id)}
+      onPointerDown={(event) => {
+        event.preventDefault();
+        onSelect(preset.id);
+      }}
     >
       <div
         className="hero-card-bg"
@@ -45,14 +48,13 @@ export default function StartScreen({ onSelect, visible }) {
   return (
     <div className="overlay overlay--start">
       <div className="start-header">
-        <h1>MARKET SWARM</h1>
-        <p>Isometric survival — PM holds the bazaar, PAPPU braves the wastes</p>
+        <h1>INTERNET SWARM</h1>
+        <p>lets see who cleans more</p>
       </div>
       <div className="hero-select">
         <HeroCard preset={CHARACTER_PRESETS.pm} onSelect={onSelect} bg="market" />
         <HeroCard preset={CHARACTER_PRESETS.pappu} onSelect={onSelect} bg="barren" />
       </div>
-      <p className="start-controls">WASD / Arrows · Space to attack · Survive 60s</p>
     </div>
   );
 }

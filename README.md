@@ -16,7 +16,7 @@ Open **http://localhost:5173/** (hard-refresh after asset updates: `Cmd+Shift+R`
 
 | Hero | Arena | Attack |
 |------|-------|--------|
-| **PM** | Isometric market | Lotus AoE |
+| **Mitrooo** | Isometric market | Lotus AoE |
 | **PAPPU** | Isometric barren wasteland | Big hand slap |
 
 Hero select shows **face portrait + name only** (not sprite sheets).
@@ -27,10 +27,10 @@ Hero select shows **face portrait + name only** (not sprite sheets).
 |------|---------|
 | `bg-market.png` | Isometric market background |
 | `bg-barren.png` | Isometric barren background |
-| `pm-spritesheet.png` | PM isometric animation (6 frames) |
+| `pm-spritesheet.png` | Mitrooo isometric animation (6 frames) |
 | `pappu-spritesheet.png` | PAPPU isometric animation (6 frames) |
 | `cockroach-spritesheet.png` | Small roach crawl (8 frames) |
-| `pm-portrait.png` | PM select-screen face |
+| `pm-portrait.png` | Mitrooo select-screen face |
 | `pappu-portrait.png` | PAPPU select-screen face |
 
 ## Tech

@@ -1,8 +1,8 @@
 export const CHARACTER_PRESETS = {
   pm: {
     id: "pm",
-    label: "PM",
-    name: "PM",
+    label: "Mitrooo",
+    name: "Mitrooo",
     subtitle: "Lotus Swirl",
     color: "#ffffff",
     vestColor: "#1565c0",

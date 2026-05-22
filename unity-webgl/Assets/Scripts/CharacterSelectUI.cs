@@ -5,7 +5,7 @@ namespace MarketSwarm
 {
     public sealed class CharacterSelectUI : MonoBehaviour
     {
-        [SerializeField] private Button pmButton;
+        [SerializeField] private Button mitroooButton;
         [SerializeField] private Button pappuButton;
 
         private GameManager manager;
@@ -13,9 +13,9 @@ namespace MarketSwarm
         public void Bind(GameManager gameManager)
         {
             manager = gameManager;
-            pmButton.onClick.RemoveAllListeners();
+            mitroooButton.onClick.RemoveAllListeners();
             pappuButton.onClick.RemoveAllListeners();
-            pmButton.onClick.AddListener(() => manager.SelectCharacter(CharacterId.PM));
+            mitroooButton.onClick.AddListener(() => manager.SelectCharacter(CharacterId.Mitrooo));
             pappuButton.onClick.AddListener(() => manager.SelectCharacter(CharacterId.Pappu));
         }
     }

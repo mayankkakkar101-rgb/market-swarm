@@ -17,7 +17,7 @@ namespace MarketSwarm
         [SerializeField] private GameObject gameOverPanel;
 
         [Header("Characters")]
-        [SerializeField] private CharacterDefinition pmCharacter;
+        [SerializeField] private CharacterDefinition mitroooCharacter;
         [SerializeField] private CharacterDefinition pappuCharacter;
 
         public GameState State { get; private set; } = GameState.CharacterSelect;
@@ -63,7 +63,7 @@ namespace MarketSwarm
 
         public CharacterDefinition GetDefinition(CharacterId id)
         {
-            return id == CharacterId.PM ? pmCharacter : pappuCharacter;
+            return id == CharacterId.Mitrooo ? mitroooCharacter : pappuCharacter;
         }
 
         public void SelectCharacter(CharacterId id)

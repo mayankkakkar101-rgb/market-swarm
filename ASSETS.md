@@ -8,9 +8,9 @@ All gameplay sprites should use a fixed directional grid:
 
 | Asset | File | Cell Size | Grid | Final PNG Size |
 | --- | --- | --- | --- | --- |
-| PM hero source | `public/assets/pm-directional.png` | source sheet | `4 cols x 4 rows` | `1024x682` |
+| Mitrooo hero source | `public/assets/pm-directional.png` | source sheet | `4 cols x 4 rows` | `1024x682` |
 | PAPPU hero source | `public/assets/pappu-directional.png` | source sheet | `4 cols x 4 rows` | `1024x682` |
-| PM hero runtime | `public/assets/pm-directional-normalized.png` | `256x256` | `4 cols x 4 rows` | `1024x1024` |
+| Mitrooo hero runtime | `public/assets/pm-directional-normalized.png` | `256x256` | `4 cols x 4 rows` | `1024x1024` |
 | PAPPU hero runtime | `public/assets/pappu-directional-normalized.png` | `256x256` | `4 cols x 4 rows` | `1024x1024` |
 | Cockroach | `public/assets/cockroach-directional.png` | `256x256` | `6 cols x 4 rows` | `1536x1024` |
 
@@ -35,7 +35,7 @@ The game also saves individual normalized hero frames:
 - `public/assets/sprites/pm/se-0.png` ... `ne-3.png`
 - `public/assets/sprites/pappu/se-0.png` ... `ne-3.png`
 
-For PM, the runtime sheet is currently rebuilt from hand-cleaned individual frame PNGs in
+For Mitrooo, the runtime sheet is currently rebuilt from hand-cleaned individual frame PNGs in
 `public/assets/sprites/pm/`, not by slicing the old source sheet directly.
 
 ## Transparency Rules
@@ -48,7 +48,7 @@ Acceptable fallback: use a solid magenta background (`#FF00FF`). The game strips
 
 ## Character Design Notes
 
-PM:
+Mitrooo:
 
 - White kurta pajama
 - Blue Nehru vest
@@ -77,7 +77,7 @@ Character select uses portrait-only files:
 
 | Hero | File | Recommended Size |
 | --- | --- | --- |
-| PM | `public/assets/pm-portrait.png` | `256x256` |
+| Mitrooo | `public/assets/pm-portrait.png` | `256x256` |
 | PAPPU | `public/assets/pappu-portrait.png` | `256x256` |
 
 Portraits should show the face/bust only, not the full sprite sheet.
